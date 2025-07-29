@@ -8,7 +8,7 @@
 
 # 📘 Introdução
 
-Este projeto foi desenvolvido utilizando um modelo de **árvore de decisão (DecisionTreeClassifier)** e implementado com **Streamlit** para visualização interativa.  
+Este projeto foi desenvolvido utilizando um modelo de **Regressão Logistica (RegressionClassifier)** e implementado com **Streamlit** para visualização interativa.  
 O objetivo principal é **classificar pacientes com doença renal crônica (CKD)** com base em características clínicas relevantes, como:
 
 - Idade  
@@ -115,3 +115,44 @@ Por outro lado, o modelo de **Árvore de Decisão**, apesar de ter apresentado u
 ### 📄 Licença
 Este projeto está licenciado sob a MIT License.
 
+### ✅ Próximos Passos
+#### Coleta de Novos Dados
+Continuar a coleta e integração de novos dados relevantes ao problema para enriquecer o dataset atual, melhorando a variabilidade e robustez do modelo.
+
+#### Atualização do Dataset e Pré-processamento
+
+Realizar limpeza, tratamento de valores faltantes e encoding dos novos dados conforme o pipeline atual.
+
+Verificar a distribuição das classes para garantir o balanceamento.
+
+Reavaliação do Modelo (Regressão Logística)
+
+#### Reajustar o modelo com os dados atualizados.
+
+Avaliar se há ganho em métricas de performance como acurácia, precisão, recall, F1-score e AUC-ROC.
+
+Validação Cruzada e Testes de Generalização
+
+Executar validação cruzada (k-fold) para testar a consistência do modelo.
+
+Comparar os resultados do modelo antigo com o modelo reentrenado.
+
+#### Monitoramento do Desempenho em Produção
+
+Implementar rotinas para monitoramento contínuo do modelo em produção (ex: conceito de model drift).
+
+Validar previsões com dados reais, sempre que possível.
+
+#### Documentação e Versionamento
+
+Registrar as versões do modelo, alterações nas features e nas métricas obtidas.
+
+Garantir reprodutibilidade com versionamento do código e dos dados.
+
+#### Avaliar Novas Abordagens (Opcional)
+
+Testar modelos adicionais como Árvore de Decisão, Random Forest, ou XGBoost para fins comparativos, caso o desempenho da Regressão Logística estagne.
+
+#### Automatização da Pipeline
+
+Criar um fluxo automatizado de ingestão de dados, treinamento e avaliação periódica do modelo, utilizando frameworks como Airflow ou scripts agendados.
